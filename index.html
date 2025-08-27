@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Illusion Bar</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery-images {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gallery-images img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .gallery-images img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -37,7 +55,10 @@
 
   <section id="gallery">
     <h2>Gallery</h2>
-    <p>Photos & Videos Coming Soon!</p>
+    <div class="gallery-images">
+      <img src="pic/Juno-Pink-Vodka.jpg" alt="Juno Pink Vodka">
+      <img src="pic/M2GrapefruitWatermelon.webp" alt="Magic Moments Vodka">
+    </div>
   </section>
 
   <section id="contact">
